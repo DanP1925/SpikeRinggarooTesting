@@ -5,23 +5,22 @@ import com.google.gson.annotations.SerializedName
 
 data class User(
         @SerializedName("login") @Expose private val login: String,
-        @SerializedName("id") @Expose private val id: Integer,
+        @SerializedName("id") @Expose private val id: Int,
         @SerializedName("node_id") @Expose private val nodeId: String,
         @SerializedName("avatar_url") @Expose private val avatarUrl: String,
-        @SerializedName("gravatar_id") @Expose private val gravatarId: String
-){
-}
-/*"url": "https://api.github.com/users/daniel",
-"html_url": "https://github.com/daniel",
-"followers_url": "https://api.github.com/users/daniel/followers",
-"following_url": "https://api.github.com/users/daniel/following{/other_user}",
-"gists_url": "https://api.github.com/users/daniel/gists{/gist_id}",
-"starred_url": "https://api.github.com/users/daniel/starred{/owner}{/repo}",
-"subscriptions_url": "https://api.github.com/users/daniel/subscriptions",
-"organizations_url": "https://api.github.com/users/daniel/orgs",
-"repos_url": "https://api.github.com/users/daniel/repos",
-"events_url": "https://api.github.com/users/daniel/events{/privacy}",
-"received_events_url": "https://api.github.com/users/daniel/received_events",
-"type": "User",
-"site_admin": false,
-"score": 102.99041*/
+        @SerializedName("gravatar_id") @Expose private val gravatarId: String,
+        @SerializedName("url") @Expose private val url: String,
+        @SerializedName("html_url") @Expose private val htmlUrl: String,
+        @SerializedName("followers_url") @Expose private val followersUrl: String,
+        @SerializedName("following_url") @Expose private val followingUrl: String,
+        @SerializedName("gists_url") @Expose private val gistsUrl: String,
+        @SerializedName("starred_url") @Expose private val starredUrl: String,
+        @SerializedName("subscriptions_url") @Expose private val subscriptionsUrl: String,
+        @SerializedName("organizations_url") @Expose private val organizationsUrl: String,
+        @SerializedName("repos_url") @Expose private val reposUrl: String,
+        @SerializedName("events_url") @Expose private val eventsUrl: String,
+        @SerializedName("received_events_url") @Expose private val receivedEventsUrl: String,
+        @SerializedName("type") @Expose private val type: String,
+        @SerializedName("site_admin") @Expose private val siteAdmin: Boolean,
+        @SerializedName("score") @Expose private val score: Float
+)
